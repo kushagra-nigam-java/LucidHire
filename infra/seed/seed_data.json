@@ -1,0 +1,32 @@
+{
+  "job_requisition": {
+    "title": "Senior Backend Engineer",
+    "rubric": {
+      "technical": 40,
+      "problem_solving": 40,
+      "communication": 20
+    },
+    "generated_jd_text": "We are looking for a Senior Backend Engineer to build and maintain our core microservices. You must be proficient in Python, Flask/FastAPI, and Docker.",
+    "sandbox_type": "broken-microservice"
+  },
+  "candidates": [
+    {
+      "name": "Alice Developer",
+      "source": "LinkedIn",
+      "resume_text": "Senior Software Engineer with 6 years of experience in Python and microservices. Strong problem-solving skills.",
+      "repo_metadata": {"stars": 120, "commits": 1500, "languages": ["Python", "Go"]}
+    },
+    {
+      "name": "Bob Coder",
+      "source": "GitHub",
+      "resume_text": "Junior developer. Knows some Python and HTML. Looking for a chance to learn.",
+      "repo_metadata": {"stars": 2, "commits": 40, "languages": ["JavaScript", "HTML"]}
+    },
+    {
+      "name": "Charlie Engineer",
+      "source": "Referral",
+      "resume_text": "Backend lead. Architected distributed systems in Python and Node.js. Passionate about test-driven development.",
+      "repo_metadata": {"stars": 340, "commits": 2100, "languages": ["Python", "TypeScript", "C++"]}
+    }
+  ]
+}

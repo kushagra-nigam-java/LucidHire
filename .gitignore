@@ -1,0 +1,25 @@
+# Environments
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.pytest_cache/
+
+# Node / Next.js
+node_modules/
+apps/web/.next/
+apps/web/out/
+apps/web/build/
+
+# Logistics
+outbox.json
+
+# OS files
+.DS_Store
+Thumbs.db

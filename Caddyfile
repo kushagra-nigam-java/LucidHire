@@ -1,0 +1,14 @@
+# Caddyfile for Reverse Proxy & Automatic Let's Encrypt SSL
+# {$DOMAIN} is injected from the environment file
+
+{$DOMAIN:localhost} {
+    # Proxy all /api requests to the FastAPI backend container
+    handle_path /api/* {
+        reverse_proxy api:8000
+    }
+
+    # Proxy everything else to the Next.js frontend container
+    handle {
+        reverse_proxy web:3000
+    }
+}
