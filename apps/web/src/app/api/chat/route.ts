@@ -28,7 +28,10 @@ export async function POST(req: Request) {
             role: "system",
             content: "You are LucidHire, an AI recruitment copilot. Keep responses extremely concise (1-2 sentences). Ask clarifying questions about the role. Once you have enough info (after 2-3 turns), say EXACTLY 'GENERATION_COMPLETE' at the end of your message to trigger the pipeline."
           },
-          ...messages
+          ...messages.map((m: any) => ({
+            role: m.role,
+            content: m.text
+          }))
         ],
         temperature: 0.7,
         max_tokens: 150,
